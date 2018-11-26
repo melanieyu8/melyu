@@ -1,37 +1,100 @@
 /* all elements */
-div {
-  font-family: ABeeZee;
+html, div {
+  font-family: Alef;
 }
 
-/* top navigation bar */
-#logo {
-  height: 5%;
-  width: 5%;
-  vertical-align: middle;
+/* containers */
+.main-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
-.name {
-  display: inline-block;
-  vertical-align: -12%;
+
+.connect-container {
+  background-color: #D1FFEF;
+  position:fixed;
+  width: 33%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
 }
-#contact-button {
-  display: inline-block;
+
+.mel-container {
+  background-color: #FFD6CE;
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  border: 2px solid;
-  border-color: mediumturquoise;
-  border-radius: 40px;
-  width: 100px;
-  cursor: pointer;
-  background-color: mediumturquoise;
-  color: white;
-  padding: 5px;
-  font-size: 90%;
-  letter-spacing: 0.1em;
-  float: right;
-  overflow: auto;
-}
-#contact-button:hover {
-  transition: 0.5s;
-  opacity: 0%;
+  align-items: center;
+  position: fixed;
+  width: 33%;
+  height: 100%;
+  top: 0px;
+  z-index: 1000;
+  padding-top: 30px;
 }
 
-/* Content */
+.portfolio-container {
+  background-color: #CBF7FF;
+  position: fixed;
+  width: 33%;
+  height: 100%;
+  top: 0px;
+  left: 858px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
+/* buttons */
+#menu {
+  height: 9.5%;
+  width: 5%;
+  background-color: white;
+  border-radius: 100%;
+  box-shadow: 2px 3px lightgray;
+  position: fixed;
+  top: 20px;
+  right: 30px;
+}
+
+#menu:hover {
+  height: 11.5%;
+  width: 6%;
+  cursor: pointer;
+  transition-duration: .2s;
+}
+
+
+
+/* images */
+#mel {
+  height: auto;
+  width: 55%;
+  border-radius: 100%;
+}
+
+
+
+/* text */
+#melanieyu {
+  font-size: 30pt;
+  color: #434343;
+  padding-bottom: 30px;
+}
+
+#melanieyu:hover {
+  color: white;
+}
+
+#intro {
+  padding-top: 30px;
+  color: #434343;
+}
+
+#portfolio {
+}
