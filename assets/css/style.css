@@ -14,12 +14,21 @@ html, div {
 
 .connect-container {
   background-color: #D1FFEF;
-  position:fixed;
+  position: fixed;
   width: 33%;
   height: 100%;
   top: 0px;
   left: 0px;
   z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.connections {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .mel-container {
@@ -78,6 +87,14 @@ html, div {
   border-radius: 100%;
 }
 
+#mel:hover {
+  box-shadow: 2px 2px #F8A393,
+              3px 3px #F8A393,
+              4px 4px #F8A393;
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+}
+
 .textline {
   height: 10%;
   width: 10%;
@@ -98,6 +115,28 @@ html, div {
   -o-transition: rotate(3600deg);
   cursor: progress;
 }
+
+#facebook, #instagram, #linkedin {
+  height: auto;
+  width: 20%;
+  cursor: pointer;
+}
+
+#avocado {
+  height: 55%;
+  width: 55%;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+#avocado:hover {
+  -webkit-animation: bounce 0.5s alternate infinite;
+  -moz-animation: bounce 0.5s alternate infinite;
+  -ms-animation: bounce 0.5s alternate infinite;
+  cursor: progress;
+}
+
 
 /* text */
 #melanieyu {
@@ -122,14 +161,27 @@ html, div {
 
 /* animations */
 @-moz-keyframes spin {
-    from { -moz-transform: rotate(0deg); }
-    to { -moz-transform: rotate(360deg); }
+  from { -moz-transform: rotate(0deg); }
+  to { -moz-transform: rotate(360deg); }
 }
 @-webkit-keyframes spin {
-    from { -webkit-transform: rotate(0deg); }
-    to { -webkit-transform: rotate(360deg); }
+  from { -webkit-transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); }
 }
 @keyframes spin {
-    from {transform:rotate(0deg);}
-    to {transform:rotate(360deg);}
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}
+
+@-moz-keyframes bounce {
+  from { -moz-transform: translate3d(0, 0, 0);     }
+  to   { -moz-transform: translate3d(0, 100px, 0); }
+}
+@-webkit-keyframes bounce {
+  from { -webkit-transform: translate3d(0, 0, 0);     }
+  to   { -webkit-transform: translate3d(0, 100px, 0); }
+}
+@keyframes bounce {
+  from { transform: translate3d(0, 0, 0);     }
+  to   { transform: translate3d(0, 100px, 0); }
 }
