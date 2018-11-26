@@ -78,7 +78,26 @@ html, div {
   border-radius: 100%;
 }
 
+.textline {
+  height: 10%;
+  width: 10%;
+}
 
+#eggs {
+  height: 55%;
+  width: 55%;
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+}
+
+#eggs:hover {
+  -webkit-animation: spin 1s infinite linear;
+  -moz-animation: spin 1s infinite linear;
+  -ms-animation: spin 1s infinite linear;
+  -o-transition: rotate(3600deg);
+  cursor: progress;
+}
 
 /* text */
 #melanieyu {
@@ -96,5 +115,21 @@ html, div {
   color: #434343;
 }
 
-#portfolio {
+#portfolio-text {
+  padding-left: 20px;
+}
+
+
+/* animations */
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
 }
