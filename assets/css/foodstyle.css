@@ -1,0 +1,45 @@
+/* all elements */
+html, div {
+  font-family: Alef;
+  background-color: #FFFEFA;
+}
+
+img {
+  height: 30%;
+  width: 30%;
+}
+
+/* containers */
+.food-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.portfolio-row-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+}
+
+/* buttons */
+#close {
+  height: 40%;
+  width: 40%;
+  display: inline-grid;
+}
+
+/* text */
+#portfolio-title {
+  font-size: 40px;
+  padding-left: 30px;
+  color: #434343;
+}
