@@ -31,10 +31,11 @@ img {
 }
 
 /* buttons */
-#close {
-  height: 40%;
-  width: 40%;
-  display: inline-grid;
+#close-button {
+  height: 40px;
+  width: auto;
+  position: absolute;
+  right: 40px;
 }
 
 /* text */
@@ -42,4 +43,62 @@ img {
   font-size: 40px;
   padding-left: 30px;
   color: #434343;
+}
+
+#caption {
+  padding-top: 20px;
+  padding-left: 10px;
+  color: #434343;
+}
+
+/* food icons */
+#EggsBenedict:hover {
+
+}
+
+#Cherries:hover {
+  animation: swing 0.5s infinite;
+  cursor: progress;
+}
+
+#Wine:hover {
+
+}
+
+#Avocado:hover {
+
+}
+
+#HotDogOcto:hover {
+
+}
+
+#Fries:hover {
+  
+}
+
+/* animations */
+@-webkit-keyframes swing {
+  20% { -webkit-transform: rotate3d(0, 0, 1, 15deg);
+        transform: rotate3d(0, 0, 1, 15deg);}
+  40% { -webkit-transform: rotate3d(0, 0, 1, -10deg);
+        transform: rotate3d(0, 0, 1, -10deg);}
+  60% { -webkit-transform: rotate3d(0, 0, 1, 5deg);
+        transform: rotate3d(0, 0, 1, 5deg);}
+  80% { -webkit-transform: rotate3d(0, 0, 1, -5deg);
+    transform: rotate3d(0, 0, 1, -5deg);}
+  to { -webkit-transform: rotate3d(0, 0, 1, 0deg);
+       transform: rotate3d(0, 0, 1, 0deg);}
+}
+@keyframes swing {
+  20% { -webkit-transform: rotate3d(0, 0, 1, 15deg);
+        transform: rotate3d(0, 0, 1, 15deg);}
+  40% { -webkit-transform: rotate3d(0, 0, 1, -10deg);
+        transform: rotate3d(0, 0, 1, -10deg);}
+  60% { -webkit-transform: rotate3d(0, 0, 1, 5deg);
+        transform: rotate3d(0, 0, 1, 5deg);}
+  80% { -webkit-transform: rotate3d(0, 0, 1, -5deg);
+        transform: rotate3d(0, 0, 1, -5deg);}
+  to { -webkit-transform: rotate3d(0, 0, 1, 0deg);
+       transform: rotate3d(0, 0, 1, 0deg);}
 }

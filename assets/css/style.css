@@ -118,11 +118,18 @@ html, div {
   padding-top: 30px;
 }
 
+#facebook:hover, #instagram:hover, #linkedin:hover {
+  height: auto;
+  width: 20%;
+  cursor: pointer;
+  padding-top: 30px;
+}
+
 #avocado {
   height: 55%;
   width: 55%;
   position: absolute;
-  top: 300px;
+  top: 330px;
   left: 20px;
 }
 
