@@ -52,42 +52,42 @@ img {
 }
 
 /* food icons */
-#EggsBenedict:hover {
+#EggsBenedict {
   animation: shake 0.5s infinite;
   cursor: progress;
 }
 
-#Cherries:hover {
+#Cherries {
   animation: wiggle 0.5s infinite;
   cursor: progress;
 }
 
-#Wine:hover {
+#Wine {
   animation: neon 0.5s alternate infinite;
   cursor: progress;
 }
 
-#Avocado:hover {
+#Avocado {
   animation: bounce 0.5s alternate infinite;
   cursor: progress;
 }
 
-#HotDogOcto:hover {
+#HotDogOcto {
   animation: ghost 0.5s alternate infinite;
   cursor: progress;
 }
 
-#Fries:hover {
+#Fries {
   animation: boop 0.5s alternate infinite;
   cursor: progress;
 }
 
-#Pizza:hover {
+#Pizza {
   animation: heartbeat 0.5s infinite;
   cursor: progress;
 }
 
-#SunnySideEggs:hover {
+#SunnySideEggs {
   animation: spin 1s infinite linear;
   cursor: progress;
 }

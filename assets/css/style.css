@@ -100,7 +100,7 @@ html, div {
   right: 30px;
 }
 
-#eggs:hover {
+#eggs {
   animation: spin 1s infinite linear;
   cursor: progress;
 }
@@ -136,7 +136,7 @@ html, div {
   left: 20px;
 }
 
-#avocado:hover {
+#avocado {
   animation: bounce 0.5s alternate infinite;
   cursor: progress;
 }
