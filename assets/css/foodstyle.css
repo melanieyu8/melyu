@@ -53,52 +53,98 @@ img {
 
 /* food icons */
 #EggsBenedict:hover {
-
+  animation: shake 0.5s infinite;
+  cursor: progress;
 }
 
 #Cherries:hover {
-  animation: swing 0.5s infinite;
+  animation: wiggle 0.5s infinite;
   cursor: progress;
 }
 
 #Wine:hover {
-
+  animation: neon 0.5s alternate infinite;
+  cursor: progress;
 }
 
 #Avocado:hover {
-
+  animation: bounce 0.5s alternate infinite;
+  cursor: progress;
 }
 
 #HotDogOcto:hover {
-
+  animation: ghost 0.5s alternate infinite;
+  cursor: progress;
 }
 
 #Fries:hover {
-  
+  animation: boop 0.5s alternate infinite;
+  cursor: progress;
 }
 
-/* animations */
-@-webkit-keyframes swing {
-  20% { -webkit-transform: rotate3d(0, 0, 1, 15deg);
-        transform: rotate3d(0, 0, 1, 15deg);}
-  40% { -webkit-transform: rotate3d(0, 0, 1, -10deg);
-        transform: rotate3d(0, 0, 1, -10deg);}
-  60% { -webkit-transform: rotate3d(0, 0, 1, 5deg);
-        transform: rotate3d(0, 0, 1, 5deg);}
-  80% { -webkit-transform: rotate3d(0, 0, 1, -5deg);
-    transform: rotate3d(0, 0, 1, -5deg);}
-  to { -webkit-transform: rotate3d(0, 0, 1, 0deg);
-       transform: rotate3d(0, 0, 1, 0deg);}
+#Pizza:hover {
+  animation: heartbeat 0.5s infinite;
+  cursor: progress;
 }
-@keyframes swing {
-  20% { -webkit-transform: rotate3d(0, 0, 1, 15deg);
-        transform: rotate3d(0, 0, 1, 15deg);}
-  40% { -webkit-transform: rotate3d(0, 0, 1, -10deg);
-        transform: rotate3d(0, 0, 1, -10deg);}
-  60% { -webkit-transform: rotate3d(0, 0, 1, 5deg);
-        transform: rotate3d(0, 0, 1, 5deg);}
-  80% { -webkit-transform: rotate3d(0, 0, 1, -5deg);
-        transform: rotate3d(0, 0, 1, -5deg);}
-  to { -webkit-transform: rotate3d(0, 0, 1, 0deg);
-       transform: rotate3d(0, 0, 1, 0deg);}
+
+#SunnySideEggs:hover {
+  animation: spin 1s infinite linear;
+  cursor: progress;
+}
+
+/*
+* animations:
+* resourced from my past codepens and from
+* inspiration for using different functions with
+* https://daneden.github.io/animate.css/.
+* final code here written by Melanie Yu.
+*/
+@keyframes spin {
+  from { transform:rotate(0deg);}
+  to { transform:rotate(360deg);}
+}
+
+@keyframes bounce {
+  from { transform: translate3d(0, 0, 0);}
+  to   { transform: translate3d(0, 50px, 0);}
+}
+
+@keyframes boop {
+  from { transform: translate3d(0, 0, 0);}
+  25% { transform: translate3d(10px, 0, 0);}
+  to   { transform: translate3d(0, 15px, 0);}
+}
+
+@keyframes ghost {
+  from { opacity: 100;}
+  to { opacity: 0;}
+}
+
+@keyframes neon {
+  from { opacity: 100;}
+  25% { opacity: 50;}
+  50% { opacity: 100;}
+  75% { opacity: 50;}
+  to { opacity: 0;}
+}
+
+@keyframes heartbeat {
+  from { transform: scale3d(1, 1, 1);}
+  25% { transform: scale3d(1.2, 1.2, 1.2);}
+  50% { transform: scale3d(1.4, 1.4, 1.4);}
+  to { transform: scale3d(1, 1, 1);}
+}
+
+@keyframes wiggle {
+  25% { transform: rotate3d(0, 2, 1, 15deg);}
+  50% { transform: rotate3d(0, 2, 1, -10deg);}
+  75% { transform: rotate3d(0, 2, 1, 5deg);}
+  to { transform: rotate3d(0, 2, 1, 0deg);}}
+
+@keyframes shake {
+  from { transform: translate3d(0, 0, 0);}
+  25% { transform: translate3d(-5%, 0, 0);}
+  50% { transform: translate3d(10%, 0, 0);}
+  75% { transform: translate3d(-5%, 0, 0);}
+  to { transform: translate3d(0, 0, 0);}
 }
